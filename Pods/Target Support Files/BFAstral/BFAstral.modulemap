@@ -1,6 +1,0 @@
-framework module BFAstral {
-  umbrella header "BFAstral-umbrella.h"
-
-  export *
-  module * { export * }
-}

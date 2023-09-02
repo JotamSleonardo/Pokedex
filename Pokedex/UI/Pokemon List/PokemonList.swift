@@ -6,9 +6,6 @@
 //
 
 import SwiftUI
-import BrightFutures
-import BFAstral
-import Astral
 import QGrid
 
 struct PokemonList: View {

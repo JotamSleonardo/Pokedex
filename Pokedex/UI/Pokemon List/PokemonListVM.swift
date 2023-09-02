@@ -6,9 +6,6 @@
 //
 
 import Foundation
-import Astral
-import BFAstral
-import BrightFutures
 import SwiftUI
 
 extension PokemonList {

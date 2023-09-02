@@ -5,9 +5,6 @@ target 'Pokedex' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'Astral'
-  pod 'BFAstral'
-
   target 'PokedexTests' do
     inherit! :search_paths
     # Pods for testing

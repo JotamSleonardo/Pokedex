@@ -1,25 +1,3 @@
-PODS:
-  - Astral (2.4.0)
-  - BFAstral (1.4.0):
-    - Astral
-    - BrightFutures
-  - BrightFutures (8.2.0)
+PODFILE CHECKSUM: 35241f0ee69d2ad4f97aee27deab5a58a089e815
 
-DEPENDENCIES:
-  - Astral
-  - BFAstral
-
-SPEC REPOS:
-  trunk:
-    - Astral
-    - BFAstral
-    - BrightFutures
-
-SPEC CHECKSUMS:
-  Astral: ed5d3072daf5cf630c8a4784c4274a252840f52b
-  BFAstral: 42cbc19d96a6e3a7a86900fff42cb4b5aedf7dbe
-  BrightFutures: 67e0e8cd974ab9f6c04650cc64153f7adf1ec489
-
-PODFILE CHECKSUM: 14cf6968b7e5d58c3ed9d5f3e0f82be1ff30a56a
-
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

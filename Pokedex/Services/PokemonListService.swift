@@ -7,9 +7,6 @@
 
 import Foundation
 import Combine
-import Astral
-import BFAstral
-import BrightFutures
 import SwiftUI
 
 protocol PokemonListType {
@@ -20,24 +17,6 @@ protocol PokemonListType {
 
 struct PokemonListService: PokemonListType {
     func load(pokemons: LoadableSubject<[Pokemon]>) {
-        let dispatcher: BFDispatcher = BFDispatcher(strategy: JSONStrategy(), isDebugMode: true)
-        let decoder: JSONDecoder = JSONDecoder()
-        let request: PokemonListRequest = PokemonListRequest()
-
-        dispatcher.response(of: request)
-            .onSuccess { (response) -> Void in
-                do {
-                    let data = try decoder.decode(Result.self, from: response.data)
-                    DispatchQueue.main.async {
-                        pokemons.wrappedValue = .loaded(data.pokemons)
-                    }
-                } catch let error {
-                    print(error)
-                }
-            }
-            .onFailure { error -> Void in
-                print(error)
-            }
     }
     
     func refreshPokemonList() -> AnyPublisher<[Pokemon], Error> {
