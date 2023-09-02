@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 extension PokemonList {
     class ViewModel: ObservableObject {
@@ -23,7 +24,6 @@ extension PokemonList {
         }
 
         public func getPokemonList() {
-            self.pokemons = .isLoading
             pokemonListService.load(pokemons: pokemonsBinding)
         }
     }

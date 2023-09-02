@@ -10,16 +10,16 @@ import Combine
 import SwiftUI
 
 protocol PokemonListType {
-    func refreshPokemonList() -> AnyPublisher<[Pokemon], Error>
     
     func load(pokemons: LoadableSubject<[Pokemon]>)
 }
 
-struct PokemonListService: PokemonListType {
-    func load(pokemons: LoadableSubject<[Pokemon]>) {
-    }
+class PokemonListService: PokemonListType {
+    private var cancellables = Set<AnyCancellable>()
     
-    func refreshPokemonList() -> AnyPublisher<[Pokemon], Error> {
+    func load(pokemons: LoadableSubject<[Pokemon]>) {
+        pokemons.wrappedValue = .isLoading
+        
         let configuration = URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = 60
         configuration.timeoutIntervalForResource = 120
@@ -32,9 +32,16 @@ struct PokemonListService: PokemonListType {
             session: URLSession(configuration: configuration),
             baseURL: "https://pokeapi.co/api/v2/"
         )
+
         
-        let samp = pokemonWebRepository.loadPokemons()
-        
-        return samp
+        pokemonWebRepository
+            .loadPokemons()
+            .sink { (subscriptionCompletion) in
+                print(subscriptionCompletion)
+            } receiveValue: { (fetchedPokemons) in
+                pokemons.wrappedValue = .loaded(fetchedPokemons.pokemons)
+            }
+            .store(in: &cancellables)
+
     }
 }

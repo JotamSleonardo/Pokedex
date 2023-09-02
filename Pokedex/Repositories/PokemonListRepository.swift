@@ -10,7 +10,7 @@ import Combine
 
 protocol PokemonListRepositoryType: WebRepository {
     
-    func loadPokemons() -> AnyPublisher<[Pokemon], Error>
+    func loadPokemons() -> AnyPublisher<Result, Error>
     
 }
 
@@ -24,7 +24,7 @@ struct PokemonListWebRepository: PokemonListRepositoryType {
         self.baseURL = baseURL
     }
     
-    func loadPokemons() -> AnyPublisher<[Pokemon], Error> {
+    func loadPokemons() -> AnyPublisher<Result, Error> {
         return self.call(endpoint: API.allPokemons)
     }
 }
@@ -37,7 +37,7 @@ extension PokemonListWebRepository {
 
 extension PokemonListWebRepository.API: APICall {
     var path: String {
-        return "pokemon"
+        return K.pokemon
     }
     
     var method: String {
