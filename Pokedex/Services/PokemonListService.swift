@@ -15,33 +15,30 @@ protocol PokemonListType {
 }
 
 class PokemonListService: PokemonListType {
+    let webRepository: PokemonListWebRepository
+    
+    init(webRepository: PokemonListWebRepository) {
+        self.webRepository = webRepository
+    }
+    
     private var cancellables = Set<AnyCancellable>()
     
     func load(pokemons: LoadableSubject<[Pokemon]>) {
         pokemons.wrappedValue = .isLoading
         
-        let configuration = URLSessionConfiguration.default
-        configuration.timeoutIntervalForRequest = 60
-        configuration.timeoutIntervalForResource = 120
-        configuration.waitsForConnectivity = true
-        configuration.httpMaximumConnectionsPerHost = 5
-        configuration.requestCachePolicy = .returnCacheDataElseLoad
-        configuration.urlCache = .shared
-        
-        let pokemonWebRepository = PokemonListWebRepository(
-            session: URLSession(configuration: configuration),
-            baseURL: "https://pokeapi.co/api/v2/"
-        )
-
-        
-        pokemonWebRepository
+        self.webRepository
             .loadPokemons()
-            .sink { (subscriptionCompletion) in
-                print(subscriptionCompletion)
+            .sink { (completion) in
+                /// TODO: Handle error
+                print(completion)
             } receiveValue: { (fetchedPokemons) in
                 pokemons.wrappedValue = .loaded(fetchedPokemons.pokemons)
             }
             .store(in: &cancellables)
 
+    }
+    
+    func getPokemonType(pokemon: Pokemon) {
+        
     }
 }

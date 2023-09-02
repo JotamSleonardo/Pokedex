@@ -8,6 +8,7 @@
 import Foundation
 
 public enum K {
+    public static let pokeApiBaseURL = "https://pokeapi.co/api/v2/"
     public static let pokemonApi = "pokeapi"
     public static let pokemonSpecies = "pokemon-species"
     public static let pokemonGender = "gender"

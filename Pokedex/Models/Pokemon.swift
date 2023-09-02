@@ -42,8 +42,8 @@ public struct Pokemon: Codable, Identifiable {
             self.id = -1
         }
     }
-
-    public var imageUrl: URL {
+    
+    public var pokemonID: String {
         var pokeID: String = ""
         if self.id < 10 {
             pokeID = "00\(self.id)"
@@ -52,13 +52,14 @@ public struct Pokemon: Codable, Identifiable {
         } else {
             pokeID = self.id.description
         }
-        guard
-            let url = URL(string: K.pokemonImageURL.replacingOccurrences(of: "$0", with: pokeID))
-        else {
-            return URL(string: "")!
-        }
+        return pokeID
+    }
 
-        return url
+    public var imageUrl: String {
+        return K.pokemonImageURL.replacingOccurrences(
+            of: "$0",
+            with: pokemonID
+        )
     }
 
     private enum CodingKeys: String, CodingKey {

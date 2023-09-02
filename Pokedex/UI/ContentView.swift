@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    let container: DIContainer
+    
     var body: some View {
-        PokemonList()
+        PokemonList(viewModel: .init(container: container))
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}
+/// TODO: Handle preview
+//struct ContentView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ContentView(container: DIContainer)
+//    }
+//}

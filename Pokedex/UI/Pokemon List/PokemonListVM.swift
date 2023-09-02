@@ -12,19 +12,23 @@ import Combine
 extension PokemonList {
     class ViewModel: ObservableObject {
         @Published var pokemons: Loadable<[Pokemon]>
-        private let pokemonListService = PokemonListService()
+        let container: DIContainer
         
         var pokemonsBinding: Binding<Loadable<[Pokemon]>> {
             Binding(get: { self.pokemons },
                     set: { self.pokemons = $0 })
         }
         
-        init (pokemons: Loadable<[Pokemon]> = .notRequested) {
+        init (container: DIContainer, pokemons: Loadable<[Pokemon]> = .notRequested) {
+            self.container = container
             _pokemons = .init(initialValue: pokemons)
         }
 
         public func getPokemonList() {
-            pokemonListService.load(pokemons: pokemonsBinding)
+            container
+                .services
+                .pokemonListService
+                .load(pokemons: pokemonsBinding)
         }
     }
     

@@ -9,11 +9,9 @@ import SwiftUI
 import QGrid
 
 struct PokemonList: View {
-    @ObservedObject private var viewModel: ViewModel = ViewModel()
+    @ObservedObject private(set) var viewModel: ViewModel
 
-    let columns = [
-        GridItem(.adaptive(minimum: 150))
-    ]
+    let columns = [GridItem(.flexible()), GridItem(.flexible())]
 
     var body: some View {
         NavigationView {
@@ -39,8 +37,8 @@ struct PokemonList: View {
                     LazyVGrid(columns: columns, spacing: 20) {
                         ForEach(pokemons) { pokemon in
                             NavigationLink(destination: PokemonDetails(id: "\(pokemon.id)")) {
-                                PokemonCell()
-                                    .frame(height: 120.0)
+                                PokemonCell(pokemon: pokemon)
+                                    .frame(height: 150.0)
                             }
                         }
                     }
@@ -55,8 +53,9 @@ struct PokemonList: View {
     }
 }
 
-struct SwiftUIView_Previews: PreviewProvider {
-    static var previews: some View {
-        PokemonList()
-    }
-}
+/// TODO: Handle Previews
+//struct SwiftUIView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        PokemonList(viewModel: .init())
+//    }
+//}
