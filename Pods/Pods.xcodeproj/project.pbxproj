@@ -1,0 +1,1578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0285F514F35F935ACC8566DF92BC6E69 /* Async.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DB22BE8E498094CD668FB16497BC48 /* Async.swift */; };
+		04F22358FC5813EC05C74118FE8B0EDC /* Astral-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB1FBA1D1CFD4ACAFCC49B13C55F244 /* Astral-dummy.m */; };
+		05C397679D3B8E0112F78B23A1DF93A2 /* AstralRequestDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C29C4DC7140AC99757697FC740FDD35 /* AstralRequestDispatcher.swift */; };
+		09BB85CA3452B26085CE689096B51EE0 /* FormURLEncodedStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8168395754BEA44A491E2F73E61208B7 /* FormURLEncodedStrategy.swift */; };
+		0E32DC157796D33D1BD322FA0108FA03 /* URLReqeustCachePolicy+Astral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D94382E5A6D9C3F190569980A8B6D14 /* URLReqeustCachePolicy+Astral.swift */; };
+		13BA32EB4C06A99DACF0E8E86D6B5800 /* Pods-PokedexTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA2DC7F25CE3CFF9A1AFAF2F5579CA9F /* Pods-PokedexTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1550DDB39B8861138540488BAE056A70 /* AstralTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4A3FB160C306D5268D8D2124735CF6 /* AstralTask.swift */; };
+		17A7CFA240B32ADBA11DCB5CC25A3FAE /* BFAstral-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A34E8A71EBAB49541A3E0C4408FA50D4 /* BFAstral-dummy.m */; };
+		1B65D660F4ADF1A67B4DCAAFB278A0E5 /* DataStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F34D6765AEA46EC94CDA5B4A4C228A4 /* DataStrategy.swift */; };
+		1C4FCEECCFD284E3B5416EAA3BEA1558 /* AsyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D6482D88CFCF1A4F51A90463829369 /* AsyncType.swift */; };
+		1DB995C460ED0183FE439CDB542B49AB /* BaseHTTPBodyRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6B9C85F0B6C2293CBCC394D086B5ED /* BaseHTTPBodyRequestBuilder.swift */; };
+		1F536A47292B361239C7B0C130C4608C /* FileManager+Astral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F016D9CCF2A30F55A83A678BB2B150F /* FileManager+Astral.swift */; };
+		207A7E7DA7B60D6C53551C90E6A3CD5D /* HTTPBodyRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9D2AD4F9E7202C739D5ECEF520BB69 /* HTTPBodyRequestBuilder.swift */; };
+		233B18E318DB2093362C48CEE86BAD64 /* MultiPartFormDataBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F4508FA8297E25AF10F083CE916E1FB /* MultiPartFormDataBuilder.swift */; };
+		23B0F2D95EF487186EF86B415F2184BA /* NSOperationQueue+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81021F599F5F67C7D0EE27E5866444D2 /* NSOperationQueue+BrightFutures.swift */; };
+		263F877362FF3B40A5D687B7835AE94A /* Astral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D90A19EAE497D065E5940B3EB600883 /* Astral.swift */; };
+		2A303E1FCD0CE225009556A83FDA8FC1 /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42178A610C1CB722E7AFF15E27E75A05 /* ResultProtocol.swift */; };
+		2CEA14948B17B2E40D7E901335EE6F24 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91D43C4DF1509027A83E2CD4B78EFFD /* RequestBuilder.swift */; };
+		2D7B5EFE40F88FD69168DA2368B9C243 /* MultiPartFormDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E110D0FC8B66388EE8EA7F3A7D45C8D5 /* MultiPartFormDataRequest.swift */; };
+		2EDD73FA2085BC69B906A027B417935C /* SwiftConcurrency+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5737FDBDD06001FA697BE7DFF77A5CC /* SwiftConcurrency+BrightFutures.swift */; };
+		2F01EA7A6EB4CA102CB39FC95C1F9EEC /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB266EE146A432FD9FE8FD80AA0AC9C5 /* Parameters.swift */; };
+		32133B58F0E8E25F4E671FB1EAD2BE0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		32EE5C165D22BB6CF5EEA6B94EABE05C /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4229EA3764CC7541F0E51997D1A96A /* Errors.swift */; };
+		38CC105656DD2E3014C83187CC76931E /* Pods-Pokedex-PokedexUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 67271F392BA26E8992B0FB51E75E1B39 /* Pods-Pokedex-PokedexUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		438B2A2EE3B479AA1E6EE44C379BE8D6 /* RequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B110D3728B11042DDF07A50085078 /* RequestConfiguration.swift */; };
+		4562DD3468E75B599CDD03C12F673EDD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		4DA988CE10B4C0949D398CADAD4448E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		537361ACFB98D8B5D84B4C0E9DC842E6 /* BrightFutures-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0BC6BDB3C72F858EFF252CC1110358 /* BrightFutures-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5482D97539A52F531FB6192C32925E8C /* Pods-Pokedex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0355DFBCED2BF95B590B54E06C17474 /* Pods-Pokedex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57DDB19FAD869DE2521F31A968157335 /* Pods-Pokedex-PokedexUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F0EC6D8F9DA687F71E3AA466BA7653 /* Pods-Pokedex-PokedexUITests-dummy.m */; };
+		5CA00C373102B9F0FB20E52EE8C1E8B7 /* BFAstral-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A8EFE6E6DAB846F14A1E1D4E235587 /* BFAstral-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		624F9EFC31D2BA73A614FECBD608A6B8 /* Dispatch+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A67888267E12E7C97BFF54881445D5 /* Dispatch+BrightFutures.swift */; };
+		64621204BE99EFAF2A7719F4F946F861 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FAEC34318A22ED2B21B9FCB7C00276 /* Response.swift */; };
+		675C32F1946E9E12D62E43BE7DE1CC46 /* JSONResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A9C81288C0D1D9DEAFAB8BBBAA76CA /* JSONResponse.swift */; };
+		6B335113ED0B32C5EC001C69F3B87C17 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802E894F2199B6B349342B06436F987B /* Promise.swift */; };
+		6B450039287E606C47DE1B3358BF9244 /* MultiPartFormDataStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3777C5D6A12A7BAD563E3568F3FDCD46 /* MultiPartFormDataStrategy.swift */; };
+		74DC6A686B6FB6BE58FA93862590E35C /* MutableAsyncType+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C8CC8F0FEDA961CBB8FA8C0423CBB8 /* MutableAsyncType+ResultType.swift */; };
+		7B26D0E2296B5D635EA81E90FD4B6167 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF35DB7F3BEED5D86287020E8448712 /* Header.swift */; };
+		8318CAF5C4A3F2A44EEF94A0CC96ED86 /* URLRequest+Astral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0692EB3F4FD4DFF1EBCD7053D80F82 /* URLRequest+Astral.swift */; };
+		835DBB6F701482E059FE44E4490C528F /* SequenceType+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B02FB9BCE2C445B1B033C5AA864481 /* SequenceType+BrightFutures.swift */; };
+		8E0BD5DDC08E52DA71EA1161B4743EDA /* ExecutionContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1214BE012BE0F75EAAB590E638085D43 /* ExecutionContext.swift */; };
+		949BF93BCC56F4F00C820CF214A91382 /* Pods-PokedexTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F44204B4CF7E5BB00F043677EA45D8 /* Pods-PokedexTests-dummy.m */; };
+		A5201003549B207380CF860C70DEF841 /* BrightFutures-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EC56D1CA99A428A54291866BD4ACDC0A /* BrightFutures-dummy.m */; };
+		A6A28D2C384F67F140E4AF6C8F54188B /* InvalidationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EFF77B8881625E116A3C4A741DFC0BA /* InvalidationToken.swift */; };
+		A79836FAAF32DACB0BE52429B81A54D2 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7CBEAD1A69B8366280DF88770EE09BB /* HTTPMethod.swift */; };
+		A8047ED6F5870ED2EC97DE8BF7837EF8 /* BFDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632159D2D29D5695754FED30682D7317 /* BFDispatcher.swift */; };
+		A97464A529C6CED5E5F5C89BAD123840 /* RequestDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A16026CCB93E1886D994AE3181A7364 /* RequestDispatcher.swift */; };
+		B6C0010A6B60C032FAF442F8650EFF83 /* BaseRequestDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12510DDBDFE9BC1A29444B152329FBFB /* BaseRequestDispatcher.swift */; };
+		BDEF135178F2CB10EFCD6E9FA710BD82 /* MultiPartFormDataComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6BF3C5454520D59A3294C0E3BACBF /* MultiPartFormDataComponent.swift */; };
+		C203F81BF30A5147DD08896A9E13E454 /* AsyncType+ResultType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A38B31ADCF16C5F0374E86032E7A397 /* AsyncType+ResultType.swift */; };
+		C25FD77F8FF4580CDB7EE65C45136BC9 /* Pods-Pokedex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E7978D6C43247394E58077286677A650 /* Pods-Pokedex-dummy.m */; };
+		C4179C66C7A711F761478E15F4526DE8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C90C9178CD75F3590126B7E4E4848649 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CEF6872E896ED93963DC1EB31D4A3006 /* BaseDelegateDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BBAF0625BFAA3D84914BD2A7D1FE64 /* BaseDelegateDispatcher.swift */; };
+		D41CA053AAD536249F084F2F1A603912 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D7AEB4A9D0F80470BD05B5843009E4E /* JSON.swift */; };
+		D94761E892727F83021A46411320FA66 /* AstralInputStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FF0826BFD28158E51D1BFB651924C9D /* AstralInputStream.swift */; };
+		DC8B3E2D25D879C89A1A702B14F05976 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401F83A387475BF788CD60E95F6CC4F4 /* Request.swift */; };
+		E04311072B38074B6870A91834F72ABA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		E3EBBC8C403EFB655F57EE37B430033C /* Astral-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A81CC60F7D40967C2D0EB44A02AC33 /* Astral-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E814093DF5113CC685F7CF4B04EF74A3 /* BFDispatcherType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307609A6C21FE54962221C92B4E48EF3 /* BFDispatcherType.swift */; };
+		ECD45A34011BA5B6738C57A0EA7C0F20 /* MediaType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF1A6A10DAFCED2D434B0458579E05E /* MediaType.swift */; };
+		ECF18A8DCB58EC9A8F233882CC49306F /* Result+BrightFutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185029530FC77FD7ACBDAD77805264B5 /* Result+BrightFutures.swift */; };
+		F803967A52F13208555A314DC2D0264E /* URLScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64520A2D2AF8346A585685231F1C401 /* URLScheme.swift */; };
+		FB576EBED2DA34F4FCFB986A113CF1C3 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12213297CBDB4378A545CB05DE1698A /* NetworkingError.swift */; };
+		FCD9B0C5788D1F1040026BD638F067CE /* MutableAsyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4116F7EC5929403F673375067CB3BF /* MutableAsyncType.swift */; };
+		FDB46B48ECEDC4240FC99713F177BD13 /* Future.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC7D6A116E14E60C7110BF4A3BF49BEF /* Future.swift */; };
+		FEF28FC676C6EAA7F365069EA1E68D2B /* AsyncType+Debug.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AE5D5E127C92EBAE164A4E3F9AF2EA /* AsyncType+Debug.swift */; };
+		FF2D6EC3757AFA7C79A621C8D90C22F6 /* JSONStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F41CD27D35146C6251607356830314 /* JSONStrategy.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A4A1E7217AF354E9C0D2FE9EDE42D65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A77B868838ED23D78F74D26E6D17EE;
+			remoteInfo = BFAstral;
+		};
+		3D55F816CFFAC7D79432D6EDCE71EEC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9A4299788AF53432D49DA779EE4F708;
+			remoteInfo = BrightFutures;
+		};
+		566B9CC362493118BB163CA736ADA38D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D81D2C324D1A90E0B7452BBDD63B882F;
+			remoteInfo = Astral;
+		};
+		6AFCD2C4F90649AE59AAAF798805D664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57055241B6E29F09367EDEDAC269C422;
+			remoteInfo = "Pods-Pokedex";
+		};
+		89266027060E7DE83DD7374437199A88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9A4299788AF53432D49DA779EE4F708;
+			remoteInfo = BrightFutures;
+		};
+		D415D484A59AE4EFE931AEDB3247AAB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D81D2C324D1A90E0B7452BBDD63B882F;
+			remoteInfo = Astral;
+		};
+		D818879F52F222F354D6D0FEC29B716C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D81D2C324D1A90E0B7452BBDD63B882F;
+			remoteInfo = Astral;
+		};
+		DDA5EFC1EB7EA038C28423839F51B94F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A77B868838ED23D78F74D26E6D17EE;
+			remoteInfo = BFAstral;
+		};
+		EC34865792165C6B9B84CCC393747CB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9A4299788AF53432D49DA779EE4F708;
+			remoteInfo = BrightFutures;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06FAEC34318A22ED2B21B9FCB7C00276 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Sources/Response.swift; sourceTree = "<group>"; };
+		08A6C20FAEF7ADEDD537B9D1C6F50790 /* Pods-PokedexTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PokedexTests.release.xcconfig"; sourceTree = "<group>"; };
+		0A38B31ADCF16C5F0374E86032E7A397 /* AsyncType+ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AsyncType+ResultType.swift"; path = "Sources/BrightFutures/AsyncType+ResultType.swift"; sourceTree = "<group>"; };
+		0C0692EB3F4FD4DFF1EBCD7053D80F82 /* URLRequest+Astral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Astral.swift"; path = "Sources/URLRequest+Astral.swift"; sourceTree = "<group>"; };
+		0C29C4DC7140AC99757697FC740FDD35 /* AstralRequestDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AstralRequestDispatcher.swift; path = Sources/AstralRequestDispatcher.swift; sourceTree = "<group>"; };
+		0F4508FA8297E25AF10F083CE916E1FB /* MultiPartFormDataBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiPartFormDataBuilder.swift; path = Sources/MultiPartFormDataBuilder.swift; sourceTree = "<group>"; };
+		11EC137EB00B758E0C811BD9DB32A561 /* Pods-PokedexTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PokedexTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		1214BE012BE0F75EAAB590E638085D43 /* ExecutionContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExecutionContext.swift; path = Sources/BrightFutures/ExecutionContext.swift; sourceTree = "<group>"; };
+		12510DDBDFE9BC1A29444B152329FBFB /* BaseRequestDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseRequestDispatcher.swift; path = Sources/BaseRequestDispatcher.swift; sourceTree = "<group>"; };
+		12ECF26BC835B17E234F14D6BDBF73E6 /* Pods-PokedexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PokedexTests.debug.xcconfig"; sourceTree = "<group>"; };
+		185029530FC77FD7ACBDAD77805264B5 /* Result+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+BrightFutures.swift"; path = "Sources/BrightFutures/Result+BrightFutures.swift"; sourceTree = "<group>"; };
+		1FF0826BFD28158E51D1BFB651924C9D /* AstralInputStream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AstralInputStream.swift; path = Sources/AstralInputStream.swift; sourceTree = "<group>"; };
+		22C637EED5F62EB93BC72A55F30EEEF9 /* Astral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Astral.debug.xcconfig; sourceTree = "<group>"; };
+		259DA5CE8AF4A6AC39B8CC6D4907B328 /* BFAstral.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BFAstral.debug.xcconfig; sourceTree = "<group>"; };
+		26F97EFE79CEB57629EEAE92551705EC /* Pods-PokedexTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PokedexTests-Info.plist"; sourceTree = "<group>"; };
+		2A8A09A3BB71E6675B938AE4DB640502 /* Pods-Pokedex-PokedexUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex-PokedexUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2EFF77B8881625E116A3C4A741DFC0BA /* InvalidationToken.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InvalidationToken.swift; path = Sources/BrightFutures/InvalidationToken.swift; sourceTree = "<group>"; };
+		2F016D9CCF2A30F55A83A678BB2B150F /* FileManager+Astral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "FileManager+Astral.swift"; path = "Sources/FileManager+Astral.swift"; sourceTree = "<group>"; };
+		2FD6BF3C5454520D59A3294C0E3BACBF /* MultiPartFormDataComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiPartFormDataComponent.swift; path = Sources/MultiPartFormDataComponent.swift; sourceTree = "<group>"; };
+		307609A6C21FE54962221C92B4E48EF3 /* BFDispatcherType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BFDispatcherType.swift; path = Sources/BFDispatcherType.swift; sourceTree = "<group>"; };
+		33D6482D88CFCF1A4F51A90463829369 /* AsyncType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AsyncType.swift; path = Sources/BrightFutures/AsyncType.swift; sourceTree = "<group>"; };
+		35C8CC8F0FEDA961CBB8FA8C0423CBB8 /* MutableAsyncType+ResultType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "MutableAsyncType+ResultType.swift"; path = "Sources/BrightFutures/MutableAsyncType+ResultType.swift"; sourceTree = "<group>"; };
+		3777C5D6A12A7BAD563E3568F3FDCD46 /* MultiPartFormDataStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiPartFormDataStrategy.swift; path = Sources/MultiPartFormDataStrategy.swift; sourceTree = "<group>"; };
+		3BBB0DD6E20318778DEEA3BE20F81CEF /* BFAstral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BFAstral.release.xcconfig; sourceTree = "<group>"; };
+		3E4116F7EC5929403F673375067CB3BF /* MutableAsyncType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableAsyncType.swift; path = Sources/BrightFutures/MutableAsyncType.swift; sourceTree = "<group>"; };
+		401F83A387475BF788CD60E95F6CC4F4 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Sources/Request.swift; sourceTree = "<group>"; };
+		42178A610C1CB722E7AFF15E27E75A05 /* ResultProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultProtocol.swift; path = Sources/BrightFutures/ResultProtocol.swift; sourceTree = "<group>"; };
+		441B7963DA72C258C9E580E957801EB8 /* Pods-Pokedex-PokedexUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex-PokedexUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		45A81CC60F7D40967C2D0EB44A02AC33 /* Astral-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Astral-umbrella.h"; sourceTree = "<group>"; };
+		48EA744144620F4955D1114AB86F2FC3 /* Pods-Pokedex-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex-Info.plist"; sourceTree = "<group>"; };
+		4D4A3FB160C306D5268D8D2124735CF6 /* AstralTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AstralTask.swift; path = Sources/AstralTask.swift; sourceTree = "<group>"; };
+		4D7AEB4A9D0F80470BD05B5843009E4E /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/JSON.swift; sourceTree = "<group>"; };
+		4F34D6765AEA46EC94CDA5B4A4C228A4 /* DataStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataStrategy.swift; path = Sources/DataStrategy.swift; sourceTree = "<group>"; };
+		50A67888267E12E7C97BFF54881445D5 /* Dispatch+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Dispatch+BrightFutures.swift"; path = "Sources/BrightFutures/Dispatch+BrightFutures.swift"; sourceTree = "<group>"; };
+		5107B3C5609B8433CF8871B99B010675 /* Pods-Pokedex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex.debug.xcconfig"; sourceTree = "<group>"; };
+		5141A9D0E0374B4DFD112DEE9BE7BB01 /* BrightFutures-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BrightFutures-Info.plist"; sourceTree = "<group>"; };
+		52F048EDE2E6967249E44FC4497003C7 /* Pods-Pokedex-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pokedex-frameworks.sh"; sourceTree = "<group>"; };
+		53D5102E98F18AEF6C23C33CE884E7B7 /* BrightFutures */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BrightFutures; path = BrightFutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58824E926EC8DA81C029FBFBCC022DF3 /* Pods-Pokedex-PokedexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex-PokedexUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A16026CCB93E1886D994AE3181A7364 /* RequestDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestDispatcher.swift; path = Sources/RequestDispatcher.swift; sourceTree = "<group>"; };
+		5D7B110D3728B11042DDF07A50085078 /* RequestConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestConfiguration.swift; path = Sources/RequestConfiguration.swift; sourceTree = "<group>"; };
+		632159D2D29D5695754FED30682D7317 /* BFDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BFDispatcher.swift; path = Sources/BFDispatcher.swift; sourceTree = "<group>"; };
+		65BBAF0625BFAA3D84914BD2A7D1FE64 /* BaseDelegateDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseDelegateDispatcher.swift; path = Sources/BaseDelegateDispatcher.swift; sourceTree = "<group>"; };
+		67271F392BA26E8992B0FB51E75E1B39 /* Pods-Pokedex-PokedexUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex-PokedexUITests-umbrella.h"; sourceTree = "<group>"; };
+		67F44204B4CF7E5BB00F043677EA45D8 /* Pods-PokedexTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PokedexTests-dummy.m"; sourceTree = "<group>"; };
+		6EB891840712EEF20029B762E3F84392 /* Astral-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Astral-prefix.pch"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78AE5D5E127C92EBAE164A4E3F9AF2EA /* AsyncType+Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "AsyncType+Debug.swift"; path = "Sources/BrightFutures/AsyncType+Debug.swift"; sourceTree = "<group>"; };
+		78DB22BE8E498094CD668FB16497BC48 /* Async.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Async.swift; path = Sources/BrightFutures/Async.swift; sourceTree = "<group>"; };
+		7CDFCD43D94624ACCA1E8A0261A6AA67 /* Pods-PokedexTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PokedexTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		802E894F2199B6B349342B06436F987B /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/BrightFutures/Promise.swift; sourceTree = "<group>"; };
+		81021F599F5F67C7D0EE27E5866444D2 /* NSOperationQueue+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSOperationQueue+BrightFutures.swift"; path = "Sources/BrightFutures/NSOperationQueue+BrightFutures.swift"; sourceTree = "<group>"; };
+		8168395754BEA44A491E2F73E61208B7 /* FormURLEncodedStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormURLEncodedStrategy.swift; path = Sources/FormURLEncodedStrategy.swift; sourceTree = "<group>"; };
+		8168ABE8C4D41125F52E5946AF01C9E0 /* Pods-Pokedex-PokedexUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex-PokedexUITests.release.xcconfig"; sourceTree = "<group>"; };
+		869126C5F03B6811401E40ECA81BA015 /* Astral-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Astral-Info.plist"; sourceTree = "<group>"; };
+		89F41CD27D35146C6251607356830314 /* JSONStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONStrategy.swift; path = Sources/JSONStrategy.swift; sourceTree = "<group>"; };
+		8A6C14EF07B8F4C9378FAE9AFF96D0A3 /* BrightFutures.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrightFutures.release.xcconfig; sourceTree = "<group>"; };
+		8BF1A6A10DAFCED2D434B0458579E05E /* MediaType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaType.swift; path = Sources/MediaType.swift; sourceTree = "<group>"; };
+		8D90A19EAE497D065E5940B3EB600883 /* Astral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Astral.swift; path = Sources/Astral.swift; sourceTree = "<group>"; };
+		8EF35DB7F3BEED5D86287020E8448712 /* Header.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Header.swift; path = Sources/Header.swift; sourceTree = "<group>"; };
+		90A9C81288C0D1D9DEAFAB8BBBAA76CA /* JSONResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONResponse.swift; path = Sources/JSONResponse.swift; sourceTree = "<group>"; };
+		93D06F83C4AC530D7AB336F0BFBDE015 /* BrightFutures.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BrightFutures.debug.xcconfig; sourceTree = "<group>"; };
+		9599B9EFD6ADDFF24A0619ECD8FE8056 /* Pods-Pokedex-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex-acknowledgements.plist"; sourceTree = "<group>"; };
+		95B18998CE16391823F8852A18970FA7 /* BFAstral */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BFAstral; path = BFAstral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A8E3CA35CC54FEB7D6121D491F35972 /* BFAstral-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BFAstral-prefix.pch"; sourceTree = "<group>"; };
+		9C0BC6BDB3C72F858EFF252CC1110358 /* BrightFutures-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrightFutures-umbrella.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D94382E5A6D9C3F190569980A8B6D14 /* URLReqeustCachePolicy+Astral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLReqeustCachePolicy+Astral.swift"; path = "Sources/URLReqeustCachePolicy+Astral.swift"; sourceTree = "<group>"; };
+		A34E8A71EBAB49541A3E0C4408FA50D4 /* BFAstral-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BFAstral-dummy.m"; sourceTree = "<group>"; };
+		A5737FDBDD06001FA697BE7DFF77A5CC /* SwiftConcurrency+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwiftConcurrency+BrightFutures.swift"; path = "Sources/BrightFutures/SwiftConcurrency+BrightFutures.swift"; sourceTree = "<group>"; };
+		A6E0F21D15E82F89E1825043F6343EBA /* Pods-Pokedex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex.modulemap"; sourceTree = "<group>"; };
+		A6F0EC6D8F9DA687F71E3AA466BA7653 /* Pods-Pokedex-PokedexUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex-PokedexUITests-dummy.m"; sourceTree = "<group>"; };
+		A8B02FB9BCE2C445B1B033C5AA864481 /* SequenceType+BrightFutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SequenceType+BrightFutures.swift"; path = "Sources/BrightFutures/SequenceType+BrightFutures.swift"; sourceTree = "<group>"; };
+		AA2DC7F25CE3CFF9A1AFAF2F5579CA9F /* Pods-PokedexTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PokedexTests-umbrella.h"; sourceTree = "<group>"; };
+		AC7D6A116E14E60C7110BF4A3BF49BEF /* Future.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Future.swift; path = Sources/BrightFutures/Future.swift; sourceTree = "<group>"; };
+		AFD0E5B54DF8594CA8066D0C64361088 /* Astral.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Astral.modulemap; sourceTree = "<group>"; };
+		B0355DFBCED2BF95B590B54E06C17474 /* Pods-Pokedex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pokedex-umbrella.h"; sourceTree = "<group>"; };
+		B64520A2D2AF8346A585685231F1C401 /* URLScheme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLScheme.swift; path = Sources/URLScheme.swift; sourceTree = "<group>"; };
+		B6EB58B08CAD57E1B642A8D2EF2F9228 /* Astral */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Astral; path = Astral.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2766193B0BFCC6F8DB283ED1113C981 /* Pods-Pokedex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pokedex.release.xcconfig"; sourceTree = "<group>"; };
+		C567B5F4DEB26F54E3F9C40B4A1DF07F /* BrightFutures-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BrightFutures-prefix.pch"; sourceTree = "<group>"; };
+		C8A4545C50026825CD7B1D8A612C1A2A /* BrightFutures.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BrightFutures.modulemap; sourceTree = "<group>"; };
+		C993309AA19CF1C5F86147493D37DE6B /* Pods-PokedexTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PokedexTests"; path = Pods_PokedexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C995523881C4E9AA5D1B1500C5DCED9F /* Pods-Pokedex */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pokedex"; path = Pods_Pokedex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDACB1ECAD78E0C4BBFFAB8A57E11AC5 /* Pods-Pokedex-PokedexUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Pokedex-PokedexUITests"; path = Pods_Pokedex_PokedexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12213297CBDB4378A545CB05DE1698A /* NetworkingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkingError.swift; path = Sources/NetworkingError.swift; sourceTree = "<group>"; };
+		D65695E185913D66396B9E1A5F7F91A9 /* Pods-Pokedex-PokedexUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Pokedex-PokedexUITests.modulemap"; sourceTree = "<group>"; };
+		D7B46158AAF7264F5ACF95645871B7BA /* Pods-Pokedex-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pokedex-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D7CBEAD1A69B8366280DF88770EE09BB /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/HTTPMethod.swift; sourceTree = "<group>"; };
+		D97904F0EBFEA627E038511E317AE851 /* BFAstral.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BFAstral.modulemap; sourceTree = "<group>"; };
+		E110D0FC8B66388EE8EA7F3A7D45C8D5 /* MultiPartFormDataRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiPartFormDataRequest.swift; path = Sources/MultiPartFormDataRequest.swift; sourceTree = "<group>"; };
+		E111706CB19B3A837734E22384E5CCBF /* Pods-Pokedex-PokedexUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pokedex-PokedexUITests-frameworks.sh"; sourceTree = "<group>"; };
+		E50B255926FF59AB16D3DCA4978F29FB /* Astral.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Astral.release.xcconfig; sourceTree = "<group>"; };
+		E7978D6C43247394E58077286677A650 /* Pods-Pokedex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pokedex-dummy.m"; sourceTree = "<group>"; };
+		E91D43C4DF1509027A83E2CD4B78EFFD /* RequestBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestBuilder.swift; path = Sources/RequestBuilder.swift; sourceTree = "<group>"; };
+		EB266EE146A432FD9FE8FD80AA0AC9C5 /* Parameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = Sources/Parameters.swift; sourceTree = "<group>"; };
+		EB56C2676952F32155E964858554063C /* Pods-Pokedex-PokedexUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pokedex-PokedexUITests-Info.plist"; sourceTree = "<group>"; };
+		EC56D1CA99A428A54291866BD4ACDC0A /* BrightFutures-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BrightFutures-dummy.m"; sourceTree = "<group>"; };
+		ED9D2AD4F9E7202C739D5ECEF520BB69 /* HTTPBodyRequestBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPBodyRequestBuilder.swift; path = Sources/HTTPBodyRequestBuilder.swift; sourceTree = "<group>"; };
+		EDB1FBA1D1CFD4ACAFCC49B13C55F244 /* Astral-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Astral-dummy.m"; sourceTree = "<group>"; };
+		F047BCB6B9AEED795FDB7FA6AE9521C7 /* Pods-PokedexTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PokedexTests.modulemap"; sourceTree = "<group>"; };
+		F5EEB5EB10824733AAB500514894AD83 /* BFAstral-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BFAstral-Info.plist"; sourceTree = "<group>"; };
+		F6A8EFE6E6DAB846F14A1E1D4E235587 /* BFAstral-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BFAstral-umbrella.h"; sourceTree = "<group>"; };
+		FB4229EA3764CC7541F0E51997D1A96A /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = Sources/BrightFutures/Errors.swift; sourceTree = "<group>"; };
+		FC6B9C85F0B6C2293CBCC394D086B5ED /* BaseHTTPBodyRequestBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseHTTPBodyRequestBuilder.swift; path = Sources/BaseHTTPBodyRequestBuilder.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07BA434143C7547C5B9BDF76BCA10410 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32133B58F0E8E25F4E671FB1EAD2BE0A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BFEF7CF2D6428DE5B4B26DFC763BDD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C90C9178CD75F3590126B7E4E4848649 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90BA7FBD7B08D97A55CEFA9ACC2A8F73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E04311072B38074B6870A91834F72ABA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9D29891E4A6E02DBD11AD99608318A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DA988CE10B4C0949D398CADAD4448E4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4475F528C6DAF358CD4B461653886CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4562DD3468E75B599CDD03C12F673EDD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FADAA1892AFAC9C6C3B56858C44480BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4179C66C7A711F761478E15F4526DE8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		028BF187704A96DF09860C2DEF33E044 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFD0E5B54DF8594CA8066D0C64361088 /* Astral.modulemap */,
+				EDB1FBA1D1CFD4ACAFCC49B13C55F244 /* Astral-dummy.m */,
+				869126C5F03B6811401E40ECA81BA015 /* Astral-Info.plist */,
+				6EB891840712EEF20029B762E3F84392 /* Astral-prefix.pch */,
+				45A81CC60F7D40967C2D0EB44A02AC33 /* Astral-umbrella.h */,
+				22C637EED5F62EB93BC72A55F30EEEF9 /* Astral.debug.xcconfig */,
+				E50B255926FF59AB16D3DCA4978F29FB /* Astral.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Astral";
+			sourceTree = "<group>";
+		};
+		0F58234A26C7CFEEC25BDCB25373AB92 /* BrightFutures */ = {
+			isa = PBXGroup;
+			children = (
+				78DB22BE8E498094CD668FB16497BC48 /* Async.swift */,
+				33D6482D88CFCF1A4F51A90463829369 /* AsyncType.swift */,
+				78AE5D5E127C92EBAE164A4E3F9AF2EA /* AsyncType+Debug.swift */,
+				0A38B31ADCF16C5F0374E86032E7A397 /* AsyncType+ResultType.swift */,
+				50A67888267E12E7C97BFF54881445D5 /* Dispatch+BrightFutures.swift */,
+				FB4229EA3764CC7541F0E51997D1A96A /* Errors.swift */,
+				1214BE012BE0F75EAAB590E638085D43 /* ExecutionContext.swift */,
+				AC7D6A116E14E60C7110BF4A3BF49BEF /* Future.swift */,
+				2EFF77B8881625E116A3C4A741DFC0BA /* InvalidationToken.swift */,
+				3E4116F7EC5929403F673375067CB3BF /* MutableAsyncType.swift */,
+				35C8CC8F0FEDA961CBB8FA8C0423CBB8 /* MutableAsyncType+ResultType.swift */,
+				81021F599F5F67C7D0EE27E5866444D2 /* NSOperationQueue+BrightFutures.swift */,
+				802E894F2199B6B349342B06436F987B /* Promise.swift */,
+				185029530FC77FD7ACBDAD77805264B5 /* Result+BrightFutures.swift */,
+				42178A610C1CB722E7AFF15E27E75A05 /* ResultProtocol.swift */,
+				A8B02FB9BCE2C445B1B033C5AA864481 /* SequenceType+BrightFutures.swift */,
+				A5737FDBDD06001FA697BE7DFF77A5CC /* SwiftConcurrency+BrightFutures.swift */,
+				B88E5093E46F9693950A074798F489A7 /* Support Files */,
+			);
+			name = BrightFutures;
+			path = BrightFutures;
+			sourceTree = "<group>";
+		};
+		136B0C78F3354EFCAAC5817B2473BB59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6EB58B08CAD57E1B642A8D2EF2F9228 /* Astral */,
+				95B18998CE16391823F8852A18970FA7 /* BFAstral */,
+				53D5102E98F18AEF6C23C33CE884E7B7 /* BrightFutures */,
+				C995523881C4E9AA5D1B1500C5DCED9F /* Pods-Pokedex */,
+				CDACB1ECAD78E0C4BBFFAB8A57E11AC5 /* Pods-Pokedex-PokedexUITests */,
+				C993309AA19CF1C5F86147493D37DE6B /* Pods-PokedexTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1853F1F13A1606CF53A6158936FA1D00 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5054B880B8597AC69C70908853C46DA /* Pods-Pokedex */,
+				A2C7183D26892268F718A7197C1BDA0B /* Pods-Pokedex-PokedexUITests */,
+				E6E3FFA4D8EBD6C9858A8705367252D7 /* Pods-PokedexTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		63EF373F21D398EC3418C641184BCBC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACC948BB04A2271980F423B527932761 /* Astral */,
+				9CD00AB80BAB7A8B23D1FE8A7017CC83 /* BFAstral */,
+				0F58234A26C7CFEEC25BDCB25373AB92 /* BrightFutures */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D375F22415869449FC0ADB9F8EFCE26 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D97904F0EBFEA627E038511E317AE851 /* BFAstral.modulemap */,
+				A34E8A71EBAB49541A3E0C4408FA50D4 /* BFAstral-dummy.m */,
+				F5EEB5EB10824733AAB500514894AD83 /* BFAstral-Info.plist */,
+				9A8E3CA35CC54FEB7D6121D491F35972 /* BFAstral-prefix.pch */,
+				F6A8EFE6E6DAB846F14A1E1D4E235587 /* BFAstral-umbrella.h */,
+				259DA5CE8AF4A6AC39B8CC6D4907B328 /* BFAstral.debug.xcconfig */,
+				3BBB0DD6E20318778DEEA3BE20F81CEF /* BFAstral.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BFAstral";
+			sourceTree = "<group>";
+		};
+		9CD00AB80BAB7A8B23D1FE8A7017CC83 /* BFAstral */ = {
+			isa = PBXGroup;
+			children = (
+				632159D2D29D5695754FED30682D7317 /* BFDispatcher.swift */,
+				307609A6C21FE54962221C92B4E48EF3 /* BFDispatcherType.swift */,
+				6D375F22415869449FC0ADB9F8EFCE26 /* Support Files */,
+			);
+			name = BFAstral;
+			path = BFAstral;
+			sourceTree = "<group>";
+		};
+		A2C7183D26892268F718A7197C1BDA0B /* Pods-Pokedex-PokedexUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D65695E185913D66396B9E1A5F7F91A9 /* Pods-Pokedex-PokedexUITests.modulemap */,
+				2A8A09A3BB71E6675B938AE4DB640502 /* Pods-Pokedex-PokedexUITests-acknowledgements.markdown */,
+				441B7963DA72C258C9E580E957801EB8 /* Pods-Pokedex-PokedexUITests-acknowledgements.plist */,
+				A6F0EC6D8F9DA687F71E3AA466BA7653 /* Pods-Pokedex-PokedexUITests-dummy.m */,
+				E111706CB19B3A837734E22384E5CCBF /* Pods-Pokedex-PokedexUITests-frameworks.sh */,
+				EB56C2676952F32155E964858554063C /* Pods-Pokedex-PokedexUITests-Info.plist */,
+				67271F392BA26E8992B0FB51E75E1B39 /* Pods-Pokedex-PokedexUITests-umbrella.h */,
+				58824E926EC8DA81C029FBFBCC022DF3 /* Pods-Pokedex-PokedexUITests.debug.xcconfig */,
+				8168ABE8C4D41125F52E5946AF01C9E0 /* Pods-Pokedex-PokedexUITests.release.xcconfig */,
+			);
+			name = "Pods-Pokedex-PokedexUITests";
+			path = "Target Support Files/Pods-Pokedex-PokedexUITests";
+			sourceTree = "<group>";
+		};
+		ACC948BB04A2271980F423B527932761 /* Astral */ = {
+			isa = PBXGroup;
+			children = (
+				8D90A19EAE497D065E5940B3EB600883 /* Astral.swift */,
+				1FF0826BFD28158E51D1BFB651924C9D /* AstralInputStream.swift */,
+				0C29C4DC7140AC99757697FC740FDD35 /* AstralRequestDispatcher.swift */,
+				4D4A3FB160C306D5268D8D2124735CF6 /* AstralTask.swift */,
+				65BBAF0625BFAA3D84914BD2A7D1FE64 /* BaseDelegateDispatcher.swift */,
+				FC6B9C85F0B6C2293CBCC394D086B5ED /* BaseHTTPBodyRequestBuilder.swift */,
+				12510DDBDFE9BC1A29444B152329FBFB /* BaseRequestDispatcher.swift */,
+				4F34D6765AEA46EC94CDA5B4A4C228A4 /* DataStrategy.swift */,
+				2F016D9CCF2A30F55A83A678BB2B150F /* FileManager+Astral.swift */,
+				8168395754BEA44A491E2F73E61208B7 /* FormURLEncodedStrategy.swift */,
+				8EF35DB7F3BEED5D86287020E8448712 /* Header.swift */,
+				ED9D2AD4F9E7202C739D5ECEF520BB69 /* HTTPBodyRequestBuilder.swift */,
+				D7CBEAD1A69B8366280DF88770EE09BB /* HTTPMethod.swift */,
+				4D7AEB4A9D0F80470BD05B5843009E4E /* JSON.swift */,
+				90A9C81288C0D1D9DEAFAB8BBBAA76CA /* JSONResponse.swift */,
+				89F41CD27D35146C6251607356830314 /* JSONStrategy.swift */,
+				8BF1A6A10DAFCED2D434B0458579E05E /* MediaType.swift */,
+				0F4508FA8297E25AF10F083CE916E1FB /* MultiPartFormDataBuilder.swift */,
+				2FD6BF3C5454520D59A3294C0E3BACBF /* MultiPartFormDataComponent.swift */,
+				E110D0FC8B66388EE8EA7F3A7D45C8D5 /* MultiPartFormDataRequest.swift */,
+				3777C5D6A12A7BAD563E3568F3FDCD46 /* MultiPartFormDataStrategy.swift */,
+				D12213297CBDB4378A545CB05DE1698A /* NetworkingError.swift */,
+				EB266EE146A432FD9FE8FD80AA0AC9C5 /* Parameters.swift */,
+				401F83A387475BF788CD60E95F6CC4F4 /* Request.swift */,
+				E91D43C4DF1509027A83E2CD4B78EFFD /* RequestBuilder.swift */,
+				5D7B110D3728B11042DDF07A50085078 /* RequestConfiguration.swift */,
+				5A16026CCB93E1886D994AE3181A7364 /* RequestDispatcher.swift */,
+				06FAEC34318A22ED2B21B9FCB7C00276 /* Response.swift */,
+				9D94382E5A6D9C3F190569980A8B6D14 /* URLReqeustCachePolicy+Astral.swift */,
+				0C0692EB3F4FD4DFF1EBCD7053D80F82 /* URLRequest+Astral.swift */,
+				B64520A2D2AF8346A585685231F1C401 /* URLScheme.swift */,
+				028BF187704A96DF09860C2DEF33E044 /* Support Files */,
+			);
+			name = Astral;
+			path = Astral;
+			sourceTree = "<group>";
+		};
+		B88E5093E46F9693950A074798F489A7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C8A4545C50026825CD7B1D8A612C1A2A /* BrightFutures.modulemap */,
+				EC56D1CA99A428A54291866BD4ACDC0A /* BrightFutures-dummy.m */,
+				5141A9D0E0374B4DFD112DEE9BE7BB01 /* BrightFutures-Info.plist */,
+				C567B5F4DEB26F54E3F9C40B4A1DF07F /* BrightFutures-prefix.pch */,
+				9C0BC6BDB3C72F858EFF252CC1110358 /* BrightFutures-umbrella.h */,
+				93D06F83C4AC530D7AB336F0BFBDE015 /* BrightFutures.debug.xcconfig */,
+				8A6C14EF07B8F4C9378FAE9AFF96D0A3 /* BrightFutures.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BrightFutures";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				63EF373F21D398EC3418C641184BCBC4 /* Pods */,
+				136B0C78F3354EFCAAC5817B2473BB59 /* Products */,
+				1853F1F13A1606CF53A6158936FA1D00 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E6E3FFA4D8EBD6C9858A8705367252D7 /* Pods-PokedexTests */ = {
+			isa = PBXGroup;
+			children = (
+				F047BCB6B9AEED795FDB7FA6AE9521C7 /* Pods-PokedexTests.modulemap */,
+				7CDFCD43D94624ACCA1E8A0261A6AA67 /* Pods-PokedexTests-acknowledgements.markdown */,
+				11EC137EB00B758E0C811BD9DB32A561 /* Pods-PokedexTests-acknowledgements.plist */,
+				67F44204B4CF7E5BB00F043677EA45D8 /* Pods-PokedexTests-dummy.m */,
+				26F97EFE79CEB57629EEAE92551705EC /* Pods-PokedexTests-Info.plist */,
+				AA2DC7F25CE3CFF9A1AFAF2F5579CA9F /* Pods-PokedexTests-umbrella.h */,
+				12ECF26BC835B17E234F14D6BDBF73E6 /* Pods-PokedexTests.debug.xcconfig */,
+				08A6C20FAEF7ADEDD537B9D1C6F50790 /* Pods-PokedexTests.release.xcconfig */,
+			);
+			name = "Pods-PokedexTests";
+			path = "Target Support Files/Pods-PokedexTests";
+			sourceTree = "<group>";
+		};
+		F5054B880B8597AC69C70908853C46DA /* Pods-Pokedex */ = {
+			isa = PBXGroup;
+			children = (
+				A6E0F21D15E82F89E1825043F6343EBA /* Pods-Pokedex.modulemap */,
+				D7B46158AAF7264F5ACF95645871B7BA /* Pods-Pokedex-acknowledgements.markdown */,
+				9599B9EFD6ADDFF24A0619ECD8FE8056 /* Pods-Pokedex-acknowledgements.plist */,
+				E7978D6C43247394E58077286677A650 /* Pods-Pokedex-dummy.m */,
+				52F048EDE2E6967249E44FC4497003C7 /* Pods-Pokedex-frameworks.sh */,
+				48EA744144620F4955D1114AB86F2FC3 /* Pods-Pokedex-Info.plist */,
+				B0355DFBCED2BF95B590B54E06C17474 /* Pods-Pokedex-umbrella.h */,
+				5107B3C5609B8433CF8871B99B010675 /* Pods-Pokedex.debug.xcconfig */,
+				C2766193B0BFCC6F8DB283ED1113C981 /* Pods-Pokedex.release.xcconfig */,
+			);
+			name = "Pods-Pokedex";
+			path = "Target Support Files/Pods-Pokedex";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01365CEC0B5FBB1C9E5D5FE724A589AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38CC105656DD2E3014C83187CC76931E /* Pods-Pokedex-PokedexUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2ADB723285852575EE25B58043E2CB79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13BA32EB4C06A99DACF0E8E86D6B5800 /* Pods-PokedexTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D49B6A3A1DBADD79AD5A063FFF86B56 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3EBBC8C403EFB655F57EE37B430033C /* Astral-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDB65D2C53BFAC4DA73AFEB4FD3445B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CA00C373102B9F0FB20E52EE8C1E8B7 /* BFAstral-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7F62E9EBD0AB78D3E9756A2FEFF5C46 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5482D97539A52F531FB6192C32925E8C /* Pods-Pokedex-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6F701DD645EC9D012777B1DAF4F8903 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				537361ACFB98D8B5D84B4C0E9DC842E6 /* BrightFutures-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D657100D111206B1C821904EB5AF8AA /* Pods-Pokedex-PokedexUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85CDBC76B074FB3B14FD6446813331C7 /* Build configuration list for PBXNativeTarget "Pods-Pokedex-PokedexUITests" */;
+			buildPhases = (
+				01365CEC0B5FBB1C9E5D5FE724A589AC /* Headers */,
+				66A3683DAF81ADDB5A043F0867039C26 /* Sources */,
+				FADAA1892AFAC9C6C3B56858C44480BA /* Frameworks */,
+				8FF39261CB428BD37179EDB041222490 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B64B46597E30114F418239E132EAC71F /* PBXTargetDependency */,
+				914A0BD683A76589D67A36D169AAA64F /* PBXTargetDependency */,
+				35577BC62B3DC1AD163DD55CDFF843D3 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pokedex-PokedexUITests";
+			productName = Pods_Pokedex_PokedexUITests;
+			productReference = CDACB1ECAD78E0C4BBFFAB8A57E11AC5 /* Pods-Pokedex-PokedexUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		57055241B6E29F09367EDEDAC269C422 /* Pods-Pokedex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 789E0BCC5FABEA7DA72990FC22A60817 /* Build configuration list for PBXNativeTarget "Pods-Pokedex" */;
+			buildPhases = (
+				E7F62E9EBD0AB78D3E9756A2FEFF5C46 /* Headers */,
+				6E9FA17AE35FD1E0089619CA08731283 /* Sources */,
+				07BA434143C7547C5B9BDF76BCA10410 /* Frameworks */,
+				109B1AD3353962CEFC19E2A84E5D11BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EC453464C7E79538A133EAACA468894 /* PBXTargetDependency */,
+				419C20343627A6B184543E7575A30EC5 /* PBXTargetDependency */,
+				90D9145224206E2FA75787ACE948D311 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pokedex";
+			productName = Pods_Pokedex;
+			productReference = C995523881C4E9AA5D1B1500C5DCED9F /* Pods-Pokedex */;
+			productType = "com.apple.product-type.framework";
+		};
+		98A77B868838ED23D78F74D26E6D17EE /* BFAstral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E94CC56B459BF5BF43831425D8D626AE /* Build configuration list for PBXNativeTarget "BFAstral" */;
+			buildPhases = (
+				BDB65D2C53BFAC4DA73AFEB4FD3445B6 /* Headers */,
+				9D63218DC816EA3334160606E3B59AEE /* Sources */,
+				3BFEF7CF2D6428DE5B4B26DFC763BDD9 /* Frameworks */,
+				8D7CA0F98D86EF6A6471A18EE319B3BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D55855DC8C8AF7570F44BEED508BA053 /* PBXTargetDependency */,
+				08475B95CF9154CB2CAEF35213AAFB21 /* PBXTargetDependency */,
+			);
+			name = BFAstral;
+			productName = BFAstral;
+			productReference = 95B18998CE16391823F8852A18970FA7 /* BFAstral */;
+			productType = "com.apple.product-type.framework";
+		};
+		A7C3EDD823055302F520291DD922FB4A /* Pods-PokedexTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 396CE0C1AEE0B092B8F40BD010D46F2D /* Build configuration list for PBXNativeTarget "Pods-PokedexTests" */;
+			buildPhases = (
+				2ADB723285852575EE25B58043E2CB79 /* Headers */,
+				A77557A29EAEFAF001BB25735638FADD /* Sources */,
+				90BA7FBD7B08D97A55CEFA9ACC2A8F73 /* Frameworks */,
+				CF4D02A29C20B2409D4A701F6505C798 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8190C409865986D309463AC64CC73B98 /* PBXTargetDependency */,
+			);
+			name = "Pods-PokedexTests";
+			productName = Pods_PokedexTests;
+			productReference = C993309AA19CF1C5F86147493D37DE6B /* Pods-PokedexTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		A9A4299788AF53432D49DA779EE4F708 /* BrightFutures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB9F0B9FB6596F6568EEA14E4472FFA4 /* Build configuration list for PBXNativeTarget "BrightFutures" */;
+			buildPhases = (
+				F6F701DD645EC9D012777B1DAF4F8903 /* Headers */,
+				5FA36D23EFB4385BBD493CFCE1C19890 /* Sources */,
+				F4475F528C6DAF358CD4B461653886CB /* Frameworks */,
+				3993F6BBF60B63A751F9B734F3D99D6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BrightFutures;
+			productName = BrightFutures;
+			productReference = 53D5102E98F18AEF6C23C33CE884E7B7 /* BrightFutures */;
+			productType = "com.apple.product-type.framework";
+		};
+		D81D2C324D1A90E0B7452BBDD63B882F /* Astral */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3BD068B3F4CB93FA0BEA2E8392913676 /* Build configuration list for PBXNativeTarget "Astral" */;
+			buildPhases = (
+				9D49B6A3A1DBADD79AD5A063FFF86B56 /* Headers */,
+				C4BC803CCFAB4A1F7D596041932CC985 /* Sources */,
+				E9D29891E4A6E02DBD11AD99608318A3 /* Frameworks */,
+				D8317E8D75274E2CFFBAD0A2646ECCF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Astral;
+			productName = Astral;
+			productReference = B6EB58B08CAD57E1B642A8D2EF2F9228 /* Astral */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 136B0C78F3354EFCAAC5817B2473BB59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D81D2C324D1A90E0B7452BBDD63B882F /* Astral */,
+				98A77B868838ED23D78F74D26E6D17EE /* BFAstral */,
+				A9A4299788AF53432D49DA779EE4F708 /* BrightFutures */,
+				57055241B6E29F09367EDEDAC269C422 /* Pods-Pokedex */,
+				0D657100D111206B1C821904EB5AF8AA /* Pods-Pokedex-PokedexUITests */,
+				A7C3EDD823055302F520291DD922FB4A /* Pods-PokedexTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		109B1AD3353962CEFC19E2A84E5D11BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3993F6BBF60B63A751F9B734F3D99D6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D7CA0F98D86EF6A6471A18EE319B3BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FF39261CB428BD37179EDB041222490 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF4D02A29C20B2409D4A701F6505C798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8317E8D75274E2CFFBAD0A2646ECCF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FA36D23EFB4385BBD493CFCE1C19890 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0285F514F35F935ACC8566DF92BC6E69 /* Async.swift in Sources */,
+				1C4FCEECCFD284E3B5416EAA3BEA1558 /* AsyncType.swift in Sources */,
+				FEF28FC676C6EAA7F365069EA1E68D2B /* AsyncType+Debug.swift in Sources */,
+				C203F81BF30A5147DD08896A9E13E454 /* AsyncType+ResultType.swift in Sources */,
+				A5201003549B207380CF860C70DEF841 /* BrightFutures-dummy.m in Sources */,
+				624F9EFC31D2BA73A614FECBD608A6B8 /* Dispatch+BrightFutures.swift in Sources */,
+				32EE5C165D22BB6CF5EEA6B94EABE05C /* Errors.swift in Sources */,
+				8E0BD5DDC08E52DA71EA1161B4743EDA /* ExecutionContext.swift in Sources */,
+				FDB46B48ECEDC4240FC99713F177BD13 /* Future.swift in Sources */,
+				A6A28D2C384F67F140E4AF6C8F54188B /* InvalidationToken.swift in Sources */,
+				FCD9B0C5788D1F1040026BD638F067CE /* MutableAsyncType.swift in Sources */,
+				74DC6A686B6FB6BE58FA93862590E35C /* MutableAsyncType+ResultType.swift in Sources */,
+				23B0F2D95EF487186EF86B415F2184BA /* NSOperationQueue+BrightFutures.swift in Sources */,
+				6B335113ED0B32C5EC001C69F3B87C17 /* Promise.swift in Sources */,
+				ECF18A8DCB58EC9A8F233882CC49306F /* Result+BrightFutures.swift in Sources */,
+				2A303E1FCD0CE225009556A83FDA8FC1 /* ResultProtocol.swift in Sources */,
+				835DBB6F701482E059FE44E4490C528F /* SequenceType+BrightFutures.swift in Sources */,
+				2EDD73FA2085BC69B906A027B417935C /* SwiftConcurrency+BrightFutures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66A3683DAF81ADDB5A043F0867039C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57DDB19FAD869DE2521F31A968157335 /* Pods-Pokedex-PokedexUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E9FA17AE35FD1E0089619CA08731283 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C25FD77F8FF4580CDB7EE65C45136BC9 /* Pods-Pokedex-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D63218DC816EA3334160606E3B59AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A7CFA240B32ADBA11DCB5CC25A3FAE /* BFAstral-dummy.m in Sources */,
+				A8047ED6F5870ED2EC97DE8BF7837EF8 /* BFDispatcher.swift in Sources */,
+				E814093DF5113CC685F7CF4B04EF74A3 /* BFDispatcherType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A77557A29EAEFAF001BB25735638FADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				949BF93BCC56F4F00C820CF214A91382 /* Pods-PokedexTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4BC803CCFAB4A1F7D596041932CC985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				263F877362FF3B40A5D687B7835AE94A /* Astral.swift in Sources */,
+				04F22358FC5813EC05C74118FE8B0EDC /* Astral-dummy.m in Sources */,
+				D94761E892727F83021A46411320FA66 /* AstralInputStream.swift in Sources */,
+				05C397679D3B8E0112F78B23A1DF93A2 /* AstralRequestDispatcher.swift in Sources */,
+				1550DDB39B8861138540488BAE056A70 /* AstralTask.swift in Sources */,
+				CEF6872E896ED93963DC1EB31D4A3006 /* BaseDelegateDispatcher.swift in Sources */,
+				1DB995C460ED0183FE439CDB542B49AB /* BaseHTTPBodyRequestBuilder.swift in Sources */,
+				B6C0010A6B60C032FAF442F8650EFF83 /* BaseRequestDispatcher.swift in Sources */,
+				1B65D660F4ADF1A67B4DCAAFB278A0E5 /* DataStrategy.swift in Sources */,
+				1F536A47292B361239C7B0C130C4608C /* FileManager+Astral.swift in Sources */,
+				09BB85CA3452B26085CE689096B51EE0 /* FormURLEncodedStrategy.swift in Sources */,
+				7B26D0E2296B5D635EA81E90FD4B6167 /* Header.swift in Sources */,
+				207A7E7DA7B60D6C53551C90E6A3CD5D /* HTTPBodyRequestBuilder.swift in Sources */,
+				A79836FAAF32DACB0BE52429B81A54D2 /* HTTPMethod.swift in Sources */,
+				D41CA053AAD536249F084F2F1A603912 /* JSON.swift in Sources */,
+				675C32F1946E9E12D62E43BE7DE1CC46 /* JSONResponse.swift in Sources */,
+				FF2D6EC3757AFA7C79A621C8D90C22F6 /* JSONStrategy.swift in Sources */,
+				ECD45A34011BA5B6738C57A0EA7C0F20 /* MediaType.swift in Sources */,
+				233B18E318DB2093362C48CEE86BAD64 /* MultiPartFormDataBuilder.swift in Sources */,
+				BDEF135178F2CB10EFCD6E9FA710BD82 /* MultiPartFormDataComponent.swift in Sources */,
+				2D7B5EFE40F88FD69168DA2368B9C243 /* MultiPartFormDataRequest.swift in Sources */,
+				6B450039287E606C47DE1B3358BF9244 /* MultiPartFormDataStrategy.swift in Sources */,
+				FB576EBED2DA34F4FCFB986A113CF1C3 /* NetworkingError.swift in Sources */,
+				2F01EA7A6EB4CA102CB39FC95C1F9EEC /* Parameters.swift in Sources */,
+				DC8B3E2D25D879C89A1A702B14F05976 /* Request.swift in Sources */,
+				2CEA14948B17B2E40D7E901335EE6F24 /* RequestBuilder.swift in Sources */,
+				438B2A2EE3B479AA1E6EE44C379BE8D6 /* RequestConfiguration.swift in Sources */,
+				A97464A529C6CED5E5F5C89BAD123840 /* RequestDispatcher.swift in Sources */,
+				64621204BE99EFAF2A7719F4F946F861 /* Response.swift in Sources */,
+				0E32DC157796D33D1BD322FA0108FA03 /* URLReqeustCachePolicy+Astral.swift in Sources */,
+				8318CAF5C4A3F2A44EEF94A0CC96ED86 /* URLRequest+Astral.swift in Sources */,
+				F803967A52F13208555A314DC2D0264E /* URLScheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08475B95CF9154CB2CAEF35213AAFB21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrightFutures;
+			target = A9A4299788AF53432D49DA779EE4F708 /* BrightFutures */;
+			targetProxy = EC34865792165C6B9B84CCC393747CB1 /* PBXContainerItemProxy */;
+		};
+		35577BC62B3DC1AD163DD55CDFF843D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrightFutures;
+			target = A9A4299788AF53432D49DA779EE4F708 /* BrightFutures */;
+			targetProxy = 89266027060E7DE83DD7374437199A88 /* PBXContainerItemProxy */;
+		};
+		419C20343627A6B184543E7575A30EC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BFAstral;
+			target = 98A77B868838ED23D78F74D26E6D17EE /* BFAstral */;
+			targetProxy = DDA5EFC1EB7EA038C28423839F51B94F /* PBXContainerItemProxy */;
+		};
+		5EC453464C7E79538A133EAACA468894 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Astral;
+			target = D81D2C324D1A90E0B7452BBDD63B882F /* Astral */;
+			targetProxy = 566B9CC362493118BB163CA736ADA38D /* PBXContainerItemProxy */;
+		};
+		8190C409865986D309463AC64CC73B98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Pokedex";
+			target = 57055241B6E29F09367EDEDAC269C422 /* Pods-Pokedex */;
+			targetProxy = 6AFCD2C4F90649AE59AAAF798805D664 /* PBXContainerItemProxy */;
+		};
+		90D9145224206E2FA75787ACE948D311 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BrightFutures;
+			target = A9A4299788AF53432D49DA779EE4F708 /* BrightFutures */;
+			targetProxy = 3D55F816CFFAC7D79432D6EDCE71EEC1 /* PBXContainerItemProxy */;
+		};
+		914A0BD683A76589D67A36D169AAA64F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BFAstral;
+			target = 98A77B868838ED23D78F74D26E6D17EE /* BFAstral */;
+			targetProxy = 0A4A1E7217AF354E9C0D2FE9EDE42D65 /* PBXContainerItemProxy */;
+		};
+		B64B46597E30114F418239E132EAC71F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Astral;
+			target = D81D2C324D1A90E0B7452BBDD63B882F /* Astral */;
+			targetProxy = D818879F52F222F354D6D0FEC29B716C /* PBXContainerItemProxy */;
+		};
+		D55855DC8C8AF7570F44BEED508BA053 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Astral;
+			target = D81D2C324D1A90E0B7452BBDD63B882F /* Astral */;
+			targetProxy = D415D484A59AE4EFE931AEDB3247AAB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08872E21ECB24EB1C04501EF9789A492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BBB0DD6E20318778DEEA3BE20F81CEF /* BFAstral.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BFAstral/BFAstral-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BFAstral/BFAstral-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BFAstral/BFAstral.modulemap";
+				PRODUCT_MODULE_NAME = BFAstral;
+				PRODUCT_NAME = BFAstral;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		09909ECBA13E8F70A928465E7F7A9A92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2DE0D8898245310716431F92FA4989FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		35CA3401F346611DE269FBDE9A69941F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08A6C20FAEF7ADEDD537B9D1C6F50790 /* Pods-PokedexTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PokedexTests/Pods-PokedexTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PokedexTests/Pods-PokedexTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40452D31AA735F94D28C71BBAB5EF894 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D06F83C4AC530D7AB336F0BFBDE015 /* BrightFutures.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BrightFutures/BrightFutures-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BrightFutures/BrightFutures-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BrightFutures/BrightFutures.modulemap";
+				PRODUCT_MODULE_NAME = BrightFutures;
+				PRODUCT_NAME = BrightFutures;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		52B3B405EFEECEEFD61735C138E4B726 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A6C14EF07B8F4C9378FAE9AFF96D0A3 /* BrightFutures.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BrightFutures/BrightFutures-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BrightFutures/BrightFutures-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BrightFutures/BrightFutures.modulemap";
+				PRODUCT_MODULE_NAME = BrightFutures;
+				PRODUCT_NAME = BrightFutures;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		77516AC864A85CEB7F85A9D3AEBA22BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 259DA5CE8AF4A6AC39B8CC6D4907B328 /* BFAstral.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BFAstral/BFAstral-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BFAstral/BFAstral-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/BFAstral/BFAstral.modulemap";
+				PRODUCT_MODULE_NAME = BFAstral;
+				PRODUCT_NAME = BFAstral;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B2CF6846075BDBDCB42C4C003FB4A84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8168ABE8C4D41125F52E5946AF01C9E0 /* Pods-Pokedex-PokedexUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex-PokedexUITests/Pods-Pokedex-PokedexUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex-PokedexUITests/Pods-Pokedex-PokedexUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9F13721FAF15CAA89CF8BF7A4F4D2CE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12ECF26BC835B17E234F14D6BDBF73E6 /* Pods-PokedexTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-PokedexTests/Pods-PokedexTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PokedexTests/Pods-PokedexTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AC2B41255EEC98E373B5497F9ADF0173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5107B3C5609B8433CF8871B99B010675 /* Pods-Pokedex.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex/Pods-Pokedex-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex/Pods-Pokedex.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C019A2500D45C7FC5B7494F13501B6BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E50B255926FF59AB16D3DCA4978F29FB /* Astral.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Astral/Astral-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Astral/Astral-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Astral/Astral.modulemap";
+				PRODUCT_MODULE_NAME = Astral;
+				PRODUCT_NAME = Astral;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C21AAAB23E72CA6BAD370B986DADEF76 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58824E926EC8DA81C029FBFBCC022DF3 /* Pods-Pokedex-PokedexUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex-PokedexUITests/Pods-Pokedex-PokedexUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex-PokedexUITests/Pods-Pokedex-PokedexUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C31B79049E3591C37742D2E998F44763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22C637EED5F62EB93BC72A55F30EEEF9 /* Astral.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Astral/Astral-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Astral/Astral-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Astral/Astral.modulemap";
+				PRODUCT_MODULE_NAME = Astral;
+				PRODUCT_NAME = Astral;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E83EFA5F9B8321669DADBF47B7D190B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2766193B0BFCC6F8DB283ED1113C981 /* Pods-Pokedex.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Pokedex/Pods-Pokedex-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pokedex/Pods-Pokedex.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		396CE0C1AEE0B092B8F40BD010D46F2D /* Build configuration list for PBXNativeTarget "Pods-PokedexTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F13721FAF15CAA89CF8BF7A4F4D2CE0 /* Debug */,
+				35CA3401F346611DE269FBDE9A69941F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3BD068B3F4CB93FA0BEA2E8392913676 /* Build configuration list for PBXNativeTarget "Astral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C31B79049E3591C37742D2E998F44763 /* Debug */,
+				C019A2500D45C7FC5B7494F13501B6BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09909ECBA13E8F70A928465E7F7A9A92 /* Debug */,
+				2DE0D8898245310716431F92FA4989FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		789E0BCC5FABEA7DA72990FC22A60817 /* Build configuration list for PBXNativeTarget "Pods-Pokedex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC2B41255EEC98E373B5497F9ADF0173 /* Debug */,
+				E83EFA5F9B8321669DADBF47B7D190B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85CDBC76B074FB3B14FD6446813331C7 /* Build configuration list for PBXNativeTarget "Pods-Pokedex-PokedexUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C21AAAB23E72CA6BAD370B986DADEF76 /* Debug */,
+				8B2CF6846075BDBDCB42C4C003FB4A84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9F0B9FB6596F6568EEA14E4472FFA4 /* Build configuration list for PBXNativeTarget "BrightFutures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40452D31AA735F94D28C71BBAB5EF894 /* Debug */,
+				52B3B405EFEECEEFD61735C138E4B726 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E94CC56B459BF5BF43831425D8D626AE /* Build configuration list for PBXNativeTarget "BFAstral" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77516AC864A85CEB7F85A9D3AEBA22BD /* Debug */,
+				08872E21ECB24EB1C04501EF9789A492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
