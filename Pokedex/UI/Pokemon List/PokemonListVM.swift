@@ -11,15 +11,16 @@ import Combine
 
 extension PokemonList {
     class ViewModel: ObservableObject {
-        @Published var pokemons: Loadable<[Pokemon]>
+        @Published var pokemons: Loadable<[PokemonDTO]>
+
         let container: DIContainer
         
-        var pokemonsBinding: Binding<Loadable<[Pokemon]>> {
+        var pokemonsBinding: Binding<Loadable<[PokemonDTO]>> {
             Binding(get: { self.pokemons },
                     set: { self.pokemons = $0 })
         }
         
-        init (container: DIContainer, pokemons: Loadable<[Pokemon]> = .notRequested) {
+        init (container: DIContainer, pokemons: Loadable<[PokemonDTO]> = .notRequested) {
             self.container = container
             _pokemons = .init(initialValue: pokemons)
         }

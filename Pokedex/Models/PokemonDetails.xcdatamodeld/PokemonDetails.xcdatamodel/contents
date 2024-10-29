@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="22G91" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Abilities" representedClassName="Abilities" syncable="YES" codeGenerationType="class"/>
+    <entity name="Evolutions" representedClassName="Evolutions" syncable="YES" codeGenerationType="class"/>
+    <entity name="PokemonDetails" representedClassName="PokemonDetails" syncable="YES" codeGenerationType="class">
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="TypeOfPokemon" representedClassName="TypeOfPokemon" syncable="YES" codeGenerationType="class"/>
+    <entity name="Weaknesses" representedClassName="Weaknesses" syncable="YES" codeGenerationType="class"/>
+</model>

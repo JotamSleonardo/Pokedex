@@ -1,44 +1,12 @@
 //
-//  PokemonDetailsModel.swift
+//  PokemonType.swift
 //  Pokedex
 //
-//  Created by Jotam Leonardo on 7/26/22.
+//  Created by Jotam Leonardo on 9/3/23.
 //
 
 import Foundation
 import SwiftUI
-
-public final class PokemonDetailsModel {
-    // MARK: - Stored Properties
-    public var id: String = ""
-    public var imageId: String = ""
-    public var name: String = ""
-    public var height: Int = 0
-    public var weight: Int = 0
-    public var gender: String = ""
-    public var eggGroup: String = ""
-    public var types: [PokeType] = []
-    public var stats: [String] = []
-    public var description: String = ""
-    public var evolutionId: Int = 0
-    public var evolution: [String] = []
-
-    //MARK: Computed Properties
-    public var imageUrl: URL {
-        guard
-            let url = URL(string: K.pokemonHQImageURL.replacingOccurrences(of: "$0", with: "\(self.imageId)"))
-        else {
-            return URL(string: "")!
-        }
-
-        return url
-    }
-
-    public var primaryColor: Color {
-        guard let pokeType = self.types.first else { return Color.clear }
-        return pokeType.color
-    }
-}
 
 public enum PokeType: String {
     case normal
@@ -148,4 +116,3 @@ public enum PokeType: String {
         }
     }
 }
-

@@ -7,17 +7,81 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
-public struct PokemonDetailsService {
-    // MARK: - Stored Properties
-    private let decoder: JSONDecoder = JSONDecoder()
+protocol PokemonDetailsType {
 
-    // MARK: - Computed Properties
-    private let queue: DispatchQueue = DispatchQueue(
-        label: K.pokemonApi,
-        qos: DispatchQoS.utility,
-        attributes: [DispatchQueue.Attributes.concurrent]
-    )
+    func getPokemonDescription(pokemon: Binding<PokemonDTO>)
+
+}
+
+public class PokemonDetailsService: PokemonDetailsType {
+    let webRepository: PokemonDetailsWebRepository
+
+    private var cancellables = Set<AnyCancellable>()
+
+    init(webRepository: PokemonDetailsWebRepository) {
+        self.webRepository = webRepository
+    }
+
+    func getPokemonDescription(pokemon: Binding<PokemonDTO>) {
+        self.webRepository
+            .getPokemonDescription(pokemonID: pokemon.id)
+            .sink(
+                receiveCompletion: { (completion) in
+                    // Handle errors
+                },
+                receiveValue: { (species) in
+                    let updatedPokemon = pokemon.wrappedValue.update(with: species)
+                    self.getPokemonEggGroup(updatedPokemon: updatedPokemon, pokemon: pokemon)
+                }
+            )
+            .store(in: &cancellables)
+
+        guard 
+            let path = Bundle.main.path(forResource: "pokemons", ofType: "json"),
+            let data = try? Data(contentsOf: URL(fileURLWithPath: path))
+        else {
+            return
+        }
+
+        if let path = Bundle.main.path(forResource: "pokemons", ofType: "json"),
+           let data = try? Data(contentsOf: URL(fileURLWithPath: path)) {
+            do {
+                let decoder = JSONDecoder()
+                let pokemonList = try decoder.decode([PokemonDetailsDTO].self, from: data)
+
+                for pokemon in pokemonList {
+                    print("Name: \(pokemon.name)")
+                    print("ID: \(pokemon.id)")
+                }
+            } catch {
+                print("Error parsing JSON: \(error)")
+            }
+        }
+    }
+
+    private func getPokemonEggGroup(updatedPokemon: PokemonDTO, pokemon: Binding<PokemonDTO>) {
+        self.webRepository
+            .getPokemonEggGroup(pokemonID: pokemon.id)
+            .sink(
+                receiveCompletion: { (completion) in
+                    switch completion {
+                        case .finished:
+                            // Handle completion if necessary
+                            break
+                        case .failure(let error):
+                            // Handle error
+                            print("Error: \(error)")
+                        }
+                },
+                receiveValue: { (eggGroup) in
+                    updatedPokemon.eggGroup = eggGroup.name
+                    pokemon.wrappedValue = updatedPokemon
+                }
+            )
+            .store(in: &cancellables)
+    }
 
     // MARK: - Instance Methods
 //    public func getPokemonDetails(with id: String) -> Future<Pokemon, NetworkingError> {

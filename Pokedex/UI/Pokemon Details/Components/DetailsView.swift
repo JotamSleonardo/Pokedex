@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct DetailsView: View {
-    let pokemon: PokemonDetailsModel
+    @ObservedObject private(set) var viewModel: PokemonDetailsVM
 
     var body: some View {
+        let pokemon = self.viewModel.pokemon
+        
         VStack(alignment: .leading) {
             HStack {
                 Text(pokemon.description)
@@ -34,7 +36,6 @@ struct DetailsView: View {
             HStack {
                 VStack(alignment: .leading, spacing: 15.0) {
                     Text("Egg Group:")
-                    Text("Gender:")
                     Text("Height:")
                     Text("Weight:")
                 }
@@ -42,8 +43,7 @@ struct DetailsView: View {
                 .padding(.trailing, 30)
 
                 VStack(alignment: .leading, spacing: 15.0) {
-                    Text(pokemon.eggGroup)
-                    Text(pokemon.gender)
+                    Text(pokemon.eggGroup.capitalizingFirstLetter())
                     Text("\(pokemon.height) m")
                     Text("\(pokemon.weight) kg")
                 }
@@ -53,8 +53,9 @@ struct DetailsView: View {
     }
 }
 
-struct DetailsView_Previews: PreviewProvider {
-    static var previews: some View {
-        DetailsView(pokemon: PokemonDetailsModel())
-    }
-}
+// TODO: Handle previews
+//struct DetailsView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        DetailsView(pokemon: PokemonDTO())
+//    }
+//}

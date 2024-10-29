@@ -12,6 +12,8 @@ protocol PokemonListRepositoryType: WebRepository {
     
     func loadPokemons() -> AnyPublisher<Result, Error>
     
+    func getPokemontType(pokemonID: String) -> AnyPublisher<Pokemon, Error>
+    
 }
 
 struct PokemonListWebRepository: PokemonListRepositoryType {
@@ -25,19 +27,29 @@ struct PokemonListWebRepository: PokemonListRepositoryType {
     }
     
     func loadPokemons() -> AnyPublisher<Result, Error> {
-        return self.call(endpoint: API.allPokemons)
+        return self.call(endpoint: ListAPI.allPokemons)
+    }
+    
+    func getPokemontType(pokemonID: String) -> AnyPublisher<Pokemon, Error> {
+        return self.call(endpoint: ListAPI.pokemonType(pokemonID))
     }
 }
 
 extension PokemonListWebRepository {
-    enum API {
+    enum ListAPI {
         case allPokemons
+        case pokemonType(String)
     }
 }
 
-extension PokemonListWebRepository.API: APICall {
+extension PokemonListWebRepository.ListAPI: APICall {
     var path: String {
-        return K.pokemon
+        switch self {
+            case .allPokemons:
+                return K.pokemon
+            case let .pokemonType(pokeId):
+                return "\(K.pokemon)/\(pokeId)"
+        }
     }
     
     var method: String {
@@ -46,6 +58,15 @@ extension PokemonListWebRepository.API: APICall {
     
     var headers: [String: String]? {
         return ["Accept": "application/json"]
+    }
+    
+    var parameters: [URLQueryItem]? {
+        switch self {
+            case .allPokemons:
+                return [URLQueryItem(name: "limit", value: "100")]
+            case .pokemonType(_):
+                return nil
+        }
     }
     
     func body() throws -> Data? {

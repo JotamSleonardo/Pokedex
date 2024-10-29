@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import QGrid
 
 struct PokemonList: View {
     @ObservedObject private(set) var viewModel: ViewModel
@@ -22,7 +21,7 @@ struct PokemonList: View {
     @ViewBuilder private var content: some View {
         switch self.viewModel.pokemons {
             case .notRequested:
-                Text("").onAppear {
+                Color.clear.onAppear {
                     self.viewModel.getPokemonList()
                 }
             case .isLoading:
@@ -36,7 +35,12 @@ struct PokemonList: View {
                 ScrollView {
                     LazyVGrid(columns: columns, spacing: 20) {
                         ForEach(pokemons) { pokemon in
-                            NavigationLink(destination: PokemonDetails(id: "\(pokemon.id)")) {
+                            NavigationLink(
+                                destination: PokemonDetailsView(viewModel: .init(
+                                    pokemon: pokemon,
+                                    container: self.viewModel.container
+                                ))
+                            ) {
                                 PokemonCell(pokemon: pokemon)
                                     .frame(height: 150.0)
                             }
@@ -53,7 +57,7 @@ struct PokemonList: View {
     }
 }
 
-/// TODO: Handle Previews
+// TODO: Handle Previews
 //struct SwiftUIView_Previews: PreviewProvider {
 //    static var previews: some View {
 //        PokemonList(viewModel: .init())

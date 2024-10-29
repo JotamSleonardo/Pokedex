@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct Result: Codable {
+public struct Result: Decodable {
     public let pokemons: [Pokemon]
 
     private enum CodingKeys: String, CodingKey {
@@ -15,7 +15,7 @@ public struct Result: Codable {
     }
 }
 
-public struct Pokemon: Codable, Identifiable {
+public struct Pokemon: Decodable, Identifiable {
     // MARK: - Stored Properties
     public let name: String
     public let url: String
@@ -42,25 +42,6 @@ public struct Pokemon: Codable, Identifiable {
             self.id = -1
         }
     }
-    
-    public var pokemonID: String {
-        var pokeID: String = ""
-        if self.id < 10 {
-            pokeID = "00\(self.id)"
-        } else if self.id < 100 {
-            pokeID = "0\(self.id)"
-        } else {
-            pokeID = self.id.description
-        }
-        return pokeID
-    }
-
-    public var imageUrl: String {
-        return K.pokemonImageURL.replacingOccurrences(
-            of: "$0",
-            with: pokemonID
-        )
-    }
 
     private enum CodingKeys: String, CodingKey {
         case name
@@ -72,7 +53,7 @@ public struct Pokemon: Codable, Identifiable {
     }
 }
 
-public struct TypeSlot: Codable, Identifiable {
+public struct TypeSlot: Decodable, Identifiable {
     public var id = UUID()
     public let type: PokemonType
 
@@ -81,7 +62,7 @@ public struct TypeSlot: Codable, Identifiable {
     }
 }
 
-public struct PokemonType: Codable {
+public struct PokemonType: Decodable {
     public let name: String
 }
 
@@ -129,4 +110,13 @@ public struct EvolutionChain: Decodable {
     let url: String
 }
 
+public struct EggGroup: Decodable {
+    // MARK: - Stored Properties
+    let name: String
+}
+
+public struct Gender: Decodable {
+    // MARK: - Stored Properties
+    let name: String
+}
 

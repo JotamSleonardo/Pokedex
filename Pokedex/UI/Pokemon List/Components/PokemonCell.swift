@@ -8,12 +8,12 @@
 import SwiftUI
 //AsyncImage(url: URL(string: pokemon.imageUrl), scale: 2)
 struct PokemonCell: View {
-    public var pokemon: Pokemon
+    public var pokemon: PokemonDTO
 
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 20)
-                .foregroundColor(Color.cyan)
+                .foregroundColor(pokemon.primaryColor)
                 .shadow(radius: 5)
             VStack(alignment: HorizontalAlignment.leading) {
                 AsyncImage(url: URL(string: pokemon.imageUrl)) { image in
@@ -21,10 +21,11 @@ struct PokemonCell: View {
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                     } placeholder: {
-                        Color.gray
+                        ProgressView()
+                            .scaleEffect(2.0)
                     }
                     .frame(width: 100.0, height: 100.0)
-                Text("POKEMON")
+                Text(pokemon.name.uppercased())
                     .font(.headline)
                     .fontWeight(.heavy)
                     .foregroundColor(.white)

@@ -6,39 +6,30 @@
 //
 
 import Foundation
+import Combine
+import SwiftUI
 
 final class PokemonDetailsVM: ObservableObject {
-    enum State {
-        case idle
-        case loading
-        case failed(Error)
-        case loaded(PokemonDetailsModel)
-    }
-
-    @Published private(set) var state: State = State.idle
-
+    @Published var pokemon: PokemonDTO
+    
     @Published var tabBarIndex: Int = 0
 
-    private(set) var pokemon: PokemonDetailsModel = PokemonDetailsModel()
-
-    private let service: PokemonDetailsService = PokemonDetailsService()
-
-    private let id: String
-
-    init(id: String) {
-        self.id = id
+    var pokemonBinding: Binding<PokemonDTO> {
+        Binding(get: { self.pokemon },
+                set: { self.pokemon = $0 })
     }
 
-    public func loadDetails() {
-        self.state = State.loading
+    let container: DIContainer
+    
+    init(pokemon: PokemonDTO, container: DIContainer) {
+        self.pokemon = pokemon
+        self.container = container
     }
 
-    private func getDescription() {
-    }
-
-    private func getPokemonGender() {
-    }
-
-    private func getPokemonEggGroups() {
+    public func getPokemonDescription() {
+        container
+            .services
+            .pokemonDetailsService
+            .getPokemonDescription(pokemon: pokemonBinding)
     }
 }
